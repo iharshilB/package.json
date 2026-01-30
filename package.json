@@ -1,0 +1,19 @@
+{
+  "name": "macro-analysis-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for macro-economic analysis on Cloudflare Workers",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:prod": "wrangler deploy --env production",
+    "secret": "wrangler secret put"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
